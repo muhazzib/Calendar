@@ -41,6 +41,49 @@ function App() {
 }
 ```
 
+
+## Usage (Calendar With Custom Background and Text Color )
+```
+import React from 'react';
+import Calendar from 'calendar-reactjs'
+function App() {
+  return (
+    <Calendar month={{
+      days: [
+        { date: "2019-06-01T00:00:00.000Z", status: "present", color: 'orange', bgcolor: 'brown' },
+        { date: "2019-06-02T00:00:00.000Z", status: "absent" , color: 'orange', bgcolor: 'brown'},
+        { date: "2019-06-18T00:00:00.000Z", status: "present" , color: 'orange', bgcolor: 'brown'},
+        { date: "2019-06-22T00:00:00.000Z", status: "present" , color: 'orange', bgcolor: 'brown'}],
+        date: '2019-06-13'
+    }}
+    />
+  );
+}
+```
+
+
+## Usage ( Example of Getting Each Cell Data Through updateStatus Method )
+```
+import React from 'react';
+import Calendar from 'calendar-reactjs'
+function App() {
+  return (
+    <Calendar month={{
+      days: [
+        { date: "2019-06-01T00:00:00.000Z", status: "present" },
+        { date: "2019-06-02T00:00:00.000Z", status: "absent" },
+        { date: "2019-06-18T00:00:00.000Z", status: "present" },
+        { date: "2019-06-22T00:00:00.000Z", status: "present" }],
+        date: '2019-06-13'
+      }}
+      updateStatus={(val) => console.log(val)}
+    />
+  );
+}
+```
+
+
+
 ## Usage (Calendar With Custom Width)
 ```
 import React from 'react';
@@ -59,7 +102,7 @@ function App() {
   );
 }
 ```
-
+**Note:** The date format should be correct and same as shown in example.
 
 ## Screen
 Empty Calendar
