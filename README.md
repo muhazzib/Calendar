@@ -20,7 +20,7 @@ const App = () => {
   );
 }
 ```
-## Usage (Calendar With Custom Background and Text Color )
+## Usage (Calendar With Custom Status Style)
 ```
 import React from 'react';
 import Calendar from 'calendar-reactjs'
