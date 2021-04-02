@@ -1,0 +1,35 @@
+.day-cell {
+  min-width: 150px;
+  height: 150px;
+}
+
+.day-cell>div {
+  height: 150px;
+  text-align: right;
+  padding: 10px;
+}
+
+.day-cell>div>div {
+  display: flex;
+  flex-direction: column;
+  height: 95px;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty-cell,
+.day-cell {
+  border: 1px solid;
+}
+
+.days {
+  height: 10px !important;
+  text-align: center;
+  color: black;
+  padding-bottom: 15px;
+  background-color: #f7f7f7 !important;
+}
+
+.day-cell:hover {
+  cursor: pointer;
+}
